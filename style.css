@@ -63,11 +63,16 @@ p {
 
 /* Top menu navigation */
 .top-menu-container ul {
+    display: block;
     padding: 0;
     margin: 0 auto;
     float: right;
     position: relative;
     right: 80px;
+}
+
+span.menu-icon {
+    display: none;
 }
 
 .top-menu-container ul li{
@@ -320,6 +325,14 @@ footer {
 @media all and (max-width: 670px) {
     h1 {
         font-size: 32px; 
+    }
+    
+    .top-menu-container ul {
+        display: none;
+    }
+  
+    span.menu-icon {
+        display: block;
     }
 
     #pride-container {
