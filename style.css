@@ -289,7 +289,14 @@ footer {
 /* Tablets */
 @media all and (max-width: 1000px) {
     h1 {
-        font-size: 56px; 
+        font-size: 32px; 
+    }
+    
+    .pride-wrapper{
+        width: 100%;
+        position: relative;
+        top: 30%;
+        margin: 0 auto;
     }
 
     h2 {
@@ -316,11 +323,16 @@ footer {
     }
 
     #pride-container {
-        text-align: left;
+        text-align: center;
+    }
+    
+    .pride-wrapper {
+        width: 100%;
+        padding: 0 10%;
     }
 
     .btn-wrapper {
-        justify-content: left;
+        justify-content: center;
     }
 
     .btn-wrapper a {
@@ -334,5 +346,11 @@ footer {
 
     .container-footer img{
         width: 50%;
+    }
+    
+    .container-footer {
+        width: 80%;
+        text-align: center;
+        padding: 25px;
     }
 }
