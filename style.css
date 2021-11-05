@@ -63,11 +63,24 @@ p {
 
 /* Top menu navigation */
 .top-menu-container ul {
+    display: block;
     padding: 0;
     margin: 0 auto;
     float: right;
     position: relative;
     right: 80px;
+}
+
+span.menu-icon {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 30px;
+    margin: 0 auto;
+    height: 80px;
+    float: right;
+    position: relative;
+    right: 30px;
 }
 
 .top-menu-container ul li{
@@ -86,7 +99,7 @@ p {
     text-transform: uppercase;
     color: #000000;
 }
-.top-menu-container li:hover {
+.top-menu-container li:hover, span.menu-icon:hover {
     color: #ffffff;
     background-color: #c3c2ff;
     transition: 0.30s ease-in-out;
@@ -128,7 +141,7 @@ p {
     padding: 12px 20px;
     text-transform: uppercase;
     font-size: 20px;
-    margin: 20px 30px 0px 0px;
+    margin: 20px 15px 0px 15px;
     text-align: center;
     width: 11em;
 }
@@ -321,9 +334,17 @@ footer {
     h1 {
         font-size: 32px; 
     }
+    
+    .top-menu-container ul {
+        display: none;
+    }
 
-    #pride-container {
-        text-align: center;
+    .logo-header {
+        left: 50px;
+    }
+  
+    span.menu-icon {
+        display: flex;
     }
     
     .pride-wrapper {
